@@ -7,7 +7,7 @@ def decode(text_file):
             words_array[int(line.split()[0])] = ''.join(line.split()[1:])
 
     py_list = [[1],[2,3],[4,5,6]]    # I'm not sure whether this pyramid should be dynamic. If so, I could produce the same list dynamically.
-
+    # It could help handle text files with different lines.
     final_sentence = [] 
     for i in words_array.keys():
         for j in py_list:
